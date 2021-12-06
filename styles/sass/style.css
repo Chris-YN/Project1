@@ -232,11 +232,34 @@ html {
 
 h1,
 h2,
-p {
+p,
+ul,
+a {
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  color: #C3DAB7;
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../assets/home-1.jpeg);
+  background-size: cover;
+  height: 100vh;
+}
+header .topNavFlexParent {
+  display: flex;
+}
+header ul {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
