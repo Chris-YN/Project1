@@ -252,11 +252,37 @@ li {
   margin: 0 auto;
 }
 
+html {
+  font-size: 125%;
+  line-height: 1.15;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.85em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
 /*========================
 //// Header Styling ////
 =========================*/
 header {
-  background-image: url(../assets/home-1.jpeg);
+  background: url(../assets/home-1.jpeg) center;
   background-size: cover;
   height: 100vh;
 }
@@ -264,13 +290,21 @@ header .topNavFlexParent {
   display: flex;
   width: 100%;
 }
-header .topNavLinks,
+header .topNavLeft,
 header .topNaveRight {
-  width: 50%;
+  width: 20%;
+}
+header h1 {
+  width: calc(100% - 40%);
+  text-align: center;
 }
 header ul {
   display: flex;
 }
 header ul li {
-  margin-right: 4%;
+  margin-right: 5%;
+}
+
+h4, h5 {
+  margin-left: 19%;
 }/*# sourceMappingURL=style.css.map */
