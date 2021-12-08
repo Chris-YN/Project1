@@ -250,11 +250,13 @@ li {
 .wrapper {
   width: 80%;
   margin: 0 auto;
+  max-width: 1280px;
 }
 
 html {
   font-size: 125%;
   line-height: 1.15;
+  color: #333333;
 }
 
 h1 {
@@ -262,6 +264,20 @@ h1 {
   font-size: 1.85em;
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
 }
 
 h4 {
@@ -278,6 +294,25 @@ h5 {
   letter-spacing: 0.02em;
 }
 
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7em;
+  line-height: 1.2em;
+  letter-spacing: 0.015em;
+}
+
+.navText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 0.035em;
+}
+.navText a {
+  color: #333333;
+}
+.navText a:visited {
+  color: #333333;
+}
+
 /*========================
 //// Header Styling ////
 =========================*/
@@ -289,14 +324,15 @@ header {
 header .topNavFlexParent {
   display: flex;
   width: 100%;
+  padding-top: 5%;
 }
-header .topNavLeft,
-header .topNaveRight {
-  width: 20%;
+header .navText {
+  display: inline-block;
 }
 header h1 {
-  width: calc(100% - 40%);
+  width: 30%;
   text-align: center;
+  margin: 0 auto;
 }
 header ul {
   display: flex;
@@ -304,7 +340,43 @@ header ul {
 header ul li {
   margin-right: 5%;
 }
+header ul li:last-child {
+  margin-right: 0;
+}
 
-h4, h5 {
-  margin-left: 19%;
+/*==================================
+//// section - .aboutUs Styling ////
+=================================*/
+.aboutUs {
+  background-color: #C3DAB7;
+}
+.aboutUs .aboutUsBackgroundHolder {
+  position: relative;
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 15%;
+}
+.aboutUs .aboutUsBackgroundHolder img {
+  max-width: 100%;
+}
+.aboutUs .aboutUsBackgroundHolder .aboutUsCircleTextHolder {
+  width: 60%;
+  position: absolute;
+  bottom: 25%;
+  left: -35%;
+}
+.aboutUs .aboutUsTextFlexParent {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+.aboutUs .aboutUsTextFlexParent div {
+  width: 30%;
+  padding: 7% 2.5% 15% 2.5%;
+}
+.aboutUs .aboutUsTextFlexParent .branding {
+  margin-left: auto;
+}
+.aboutUs .aboutUsTextFlexParent .designAndDevelop {
+  margin-right: auto;
 }/*# sourceMappingURL=style.css.map */
